@@ -1,9 +1,9 @@
 package org.example.entity;
 
-public class Automovel {
-    String marca;
-    int anoDeFabricacao;
-    String modelo;
+public abstract class Automovel {
+    private String marca;
+    private int anoDeFabricacao;
+    private String modelo;
 
     public Automovel(String marca, int anoDeFabricacao, String modelo) {
         this.marca = marca;
@@ -38,7 +38,7 @@ public class Automovel {
     public void ligar(){
         System.out.printf("Automóvel ligado");
     }
-    public void Desligar(){
+    public void desligar(){
         System.out.printf("Automóvel desligado");
     }
 
